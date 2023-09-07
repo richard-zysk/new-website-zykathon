@@ -1,5 +1,5 @@
 // Collapse Navbar
-var navbarCollapse = function() {
+var navbarCollapse = function () {
   if ($("#mainNav").offset().top > 100 || mobile) {
     if (!$("#mainNav").hasClass("navbar-shrink")) {
       $("#mainNav").addClass("navbar-shrink");
@@ -13,7 +13,7 @@ var navbarCollapse = function() {
 
 var mobile = false;
 
-var windowResize = function() {
+var windowResize = function () {
   if (window.innerWidth <= 991.98 && mobile == false) {
     mobile = true;
     $("#navbar-container").removeAttr("class");
@@ -26,16 +26,16 @@ var windowResize = function() {
   navbarCollapse();
 };
 
-(function($) {
+(function ($) {
   windowResize();
   ("use strict"); // Start of use strict
 
-  $(window).resize(function() {
+  $(window).resize(function () {
     windowResize();
   });
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
         this.pathname.replace(/^\//, "") &&
@@ -46,7 +46,7 @@ var windowResize = function() {
       if (target.length) {
         $("html, body").animate(
           {
-            scrollTop: target.offset().top - 70
+            scrollTop: target.offset().top - 70,
           },
           1000,
           "easeInOutExpo"
@@ -57,14 +57,14 @@ var windowResize = function() {
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").click(function() {
+  $(".js-scroll-trigger").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
     target: "#mainNav",
-    offset: 100
+    offset: 100,
   });
 
   // Collapse now if page is not at top
