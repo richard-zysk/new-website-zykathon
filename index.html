@@ -41,7 +41,7 @@
     .nav-item a:hover {
         background-color: rgba(255, 255, 255, 0.1);
         /* Slight white background on hover */
-        color: #FF5733;
+        color: #D40000;
         /* Change font color on hover. Adjust color as needed */
         border-radius: 5px;
         /* Rounded corners */
@@ -58,6 +58,15 @@
         left: 100px;
         top: 400px;
         transform: scaleX(-1);
+    }
+
+    .schedule-text {
+        font-weight: 900;
+        font-size: 3em;
+    }
+
+    .schedule-text::first-letter {
+        color: #D40000;
     }
 </style>
 
@@ -133,7 +142,7 @@
                     <img src="./img/Robot.gif" alt="Arrow" height="" onclick="" style="cursor: pointer;">
                 </a>
             </div>
-            <h1 class="sub-heading diagonal-text text-black orange">Schedule</h1>
+            <h1 class="sub-heading schedule-text diagonal-text text-black">Schedule</h1>
 
         </section>
 
@@ -170,8 +179,8 @@
                         &copy; 2022 Zysk Technologies
                     </div>
                     <a href="https://in.linkedin.com/company/zysktech?original_referer=https%3A%2F%2Fwww.google.com%2F"
-                        class="mx-2 orange-hover">
-                        <i class="fab fa-linkedin"></i>
+                        class="mx-2">
+                        <i class="fab fa-linkedin" style="color: #D40000;"></i>
                     </a>
                 </div>
             </div>

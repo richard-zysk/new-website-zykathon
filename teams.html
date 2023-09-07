@@ -28,7 +28,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon_io/favicon.ico">
     <style>
         .nav-item a {
-            font-size: 1.5em;
+            font-size: 1em;
             /* Adjust this value as needed */
             padding: 15px 20px;
             /* Increased padding for spaciousness */
@@ -40,7 +40,7 @@
         .nav-item a:hover {
             background-color: rgba(255, 255, 255, 0.1);
             /* Slight white background on hover */
-            color: #FF5733;
+            /* color: #FF5733; */
             /* Change font color on hover. Adjust color as needed */
             border-radius: 5px;
             /* Rounded corners */
@@ -49,7 +49,8 @@
         /* General styles for the body */
         body {
             font-family: 'Courier New', Courier, monospace;
-            background-color: #17153A;
+            /* background-color: #17153A; */
+            background-color: white;
             margin: 50px;
             color: #ecf0f1;
         }
@@ -69,7 +70,7 @@
 
         /* Styling the table header */
         .teams-table thead tr {
-            background-color: #e74c3c;
+            background-color: #D40000;
             color: white;
             text-align: center;
             font-weight: bold;
@@ -129,19 +130,19 @@
                 font-size: 15px;
                 font-weight: bold;
                 text-align: left;
-                color: #e74c3c;
+                color: #D40000;
             }
         }
 
         footer {
             margin-top: auto;
-            color: #c70000;
+            color: #D40000;
             text-align: center;
             padding: 10px 0;
         }
 
         a {
-            color: #ff5e00;
+            color: #D40000;
             text-decoration: none;
         }
     </style>
@@ -149,37 +150,28 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar teams-section-navbar navbar-expand-lg navbar-light fixed-top " id="mainNav">
-        <div id="navbar-container" class="container">
-            <div id="navbar-top-menu">
-                <div class="d-flex align-items-center justify-content-between">
-                    <a class="navbar-brand js-scroll-trigger" href="index.html">
-                        <div class="title-icon"></div>
-                    </a>
-                    <button class="navbar-toggler nexa" type="button" data-toggle="collapse"
-                        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        Menu
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul id="navbar-buttons" class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger nexa" href="topics.html">Topics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger nexa" href="teams.html">Teams</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger nexa" href="guidence.html">Guides</a>
-                    </li>
-                    <li class="nav-item" id="team">
-                        <a class="nav-link js-scroll-trigger nexa" href="rulebook.html">RuleBook</a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar home-navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div id="navbar-container" class="container" style="margin-left: 89px;">
+            <a href="/">
+                <img src="./img/Frame 66.svg" alt="" height="30px">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul id="navbar-buttons" class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger nexa" href="topics.html">Topics</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger nexa" href="teams.html">Teams</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger nexa" href="guidence.html">Guides</a>
+                </li>
+                <li class="nav-item" id="team">
+                    <a class="nav-link js-scroll-trigger nexa" href="rulebook.html">RuleBook</a>
+                </li>
+            </ul>
+        </div>
         </div>
     </nav>
 
