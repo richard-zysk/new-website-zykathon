@@ -697,7 +697,7 @@ p {
 }
 
 .schedule .table {
-  border-left: #1f1f1f 0.8rem solid;
+  border-left: #1f1f1f 5px solid;
   overflow-wrap: normal;
   margin-top: 10px;
 }

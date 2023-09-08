@@ -46,10 +46,10 @@ saturday.push(new scheduleEvent("Dinner", "21:00", "main"));
 sunday.push(new scheduleEvent("Hacking Ends", "15:00", "main"));
 sunday.push(new scheduleEvent("Breakfast", "08:00", "main"));
 sunday.push(new scheduleEvent("Lunch", "14:00", "main"));
-sunday.push(new scheduleEvent("Judging Commences", "15:15", "15:30", "main"));
+sunday.push(new scheduleEvent("Judging Commences", "15:15", "17:00", "main"));
 sunday.push(new scheduleEvent("Submission", "15:10", "main"));
 sunday.push(new scheduleEvent("Closing Ceremony", "17:00", "17:30", "main"));
-sunday.push(new scheduleEvent("Venue closed", "17:00", "main"));
+sunday.push(new scheduleEvent("Venue closed", "18:00", "main"));
 // sunday.push(new scheduleEvent("No workshops today", "00:00", "17:00", "ws"));
 
 saturday.sort((a, b) => (a.startTime >= b.startTime ? 1 : -1));
