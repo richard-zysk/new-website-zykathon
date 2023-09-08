@@ -47,7 +47,7 @@
         /* Rounded corners */
     }
 
-    .robot-animation {
+    /* .robot-animation {
         position: absolute;
         right: 100px;
         top: 400px;
@@ -58,17 +58,22 @@
         left: 100px;
         top: 400px;
         transform: scaleX(-1);
-    }
+    } */
 
     .schedule-text {
         font-weight: 900;
-        font-size: 3em;
+        font-size: 3.2em;
         margin-top: -50px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        font-family: 'Fira Code' !important;
     }
 
     .schedule-text::first-letter {
         color: #D40000;
+    }
+
+    .prize-button:hover {
+        background-color: rgb(61, 2, 2) !important;
     }
 </style>
 
@@ -128,8 +133,9 @@
                 <!-- <h2 class="white mx-auto mt-2 mb-3 sub-heading" style="width: 100%;">Zysk Technologies</h2> -->
                 <div id="button-box" style="position: relative; margin-top: 30px;">
                     <a href="https://cdn.substack.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_lossy/https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/29d72852-e3a3-4141-8920-9be7d1fc8fb0_498x210.gif"
-                        class="btn btn-primary js-scroll-trigger"
-                        style="z-index: 1; position: relative; background-color: #D40000; color: white;">Prize worth of
+                        class="btn prize-button btn-primary js-scroll-trigger"
+                        style="z-index: 1; position: relative; background-color: #D40000; color: white; font-family: 'Fira Code' !important;">Prize
+                        worth of
                         &#8377; 40,000</a>
                 </div>
             </div>

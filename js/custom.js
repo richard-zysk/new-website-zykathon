@@ -24,7 +24,7 @@ saturday.push(new scheduleEvent("Opening Ceremony", "11:00", "main"));
 // saturday.push(
 //   new scheduleEvent("Introduction to Electronics", "12:15", "13:15", "ws")
 // );
-saturday.push(new scheduleEvent("LUNCH", "13:00", "main"));
+saturday.push(new scheduleEvent("Lunch", "13:00", "main"));
 // saturday.push(
 //   new scheduleEvent("Coding Challenge by BlackRock", "13:30", "14:30", "ws")
 // );

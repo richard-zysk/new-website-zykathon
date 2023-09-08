@@ -290,7 +290,7 @@ section {
   margin: 0;
 }
 
-.team-study {}
+/* .team-study {} */
 
 .team-social {
   padding-bottom: 0.5em;
@@ -530,7 +530,7 @@ section {
 }
 
 @font-face {
-  font-family: "SubBtnText";
+  /* font-family: "SubBtnText"; */
   src: url("../font/ProximaNovaBold.otf");
   font-weight: normal;
   font-size: normal;
@@ -634,7 +634,7 @@ p {
   border-radius: 30px;
   color: black;
   margin: 0 8px;
-  font-family: "SubBtnText";
+  /* font-family: "SubBtnText"; */
   font-size: 1.5rem;
   text-transform: none;
   letter-spacing: 0px;
@@ -712,7 +712,7 @@ p {
 
 }
 
-.table td {}
+/* .table td {} */
 
 .table tbody tr td {
   vertical-align: middle;
