@@ -150,6 +150,21 @@
             color: #D40000;
             text-decoration: none;
         }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -164,6 +179,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul id="navbar-buttons" class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger nexa" href="introduction.html">Introduction</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger nexa" href="topics.html">Topics</a>
                 </li>
                 <li class="nav-item">
@@ -172,12 +190,12 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger nexa" href="guidence.html">Guides</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="team">
                     <a class="nav-link js-scroll-trigger nexa" href="rulebook.html">RuleBook</a>
                 </li>
-                <li class="nav-item" id="team">
+                <!-- <li class="nav-item" id="team">
                     <a class="nav-link js-scroll-trigger nexa" href="techSupport.html">TechSupport</a>
-                </li>
+                </li> -->
             </ul>
         </div>
         </div>
@@ -185,7 +203,7 @@
 
 
 
-    <div class="margin-top">
+    <div class="margin-top fade-in">
         <table class="teams-table">
 
             <thead>

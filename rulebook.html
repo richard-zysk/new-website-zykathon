@@ -52,33 +52,38 @@
 
         h2 {
             color: #D40000;
-            /* font-style: italic; */
             font-weight: 800;
-            /* border-bottom: 2px solid #e74c3c; */
             padding-bottom: 10px;
             margin-bottom: 10px;
             font-size: 24px;
         }
 
         p {
-            /* margin-bottom: 30px; */
             font-size: 18px;
             line-height: 1.6;
-            /* Improved line spacing */
         }
 
         .emoji {
             font-size: 24px;
             margin-right: 10px;
-            /* vertical-align: middle; */
         }
 
         .rule-section {
             margin-bottom: 60px;
-            /* Increased spacing between sections */
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in 1s ease forwards;
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     </style>
 </head>
+
 <!-- Navigation -->
 <nav class="navbar home-navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div id="navbar-container" class="container" style="margin-left: 89px;">
@@ -89,6 +94,9 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul id="navbar-buttons" class="navbar-nav ml-auto">
             <li class="nav-item">
+                <a class="nav-link js-scroll-trigger nexa" href="introduction.html">Introduction</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link js-scroll-trigger nexa" href="topics.html">Topics</a>
             </li>
             <li class="nav-item">
@@ -97,23 +105,22 @@
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger nexa" href="guidence.html">Guides</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="team">
                 <a class="nav-link js-scroll-trigger nexa" href="rulebook.html">RuleBook</a>
             </li>
-            <li class="nav-item" id="team">
+            <!-- <li class="nav-item" id="team">
                 <a class="nav-link js-scroll-trigger nexa" href="techSupport.html">TechSupport</a>
-            </li>
+            </li> -->
         </ul>
-    </div>
     </div>
 </nav>
 
 <body>
 
-    <div class="rulebook rulebook-margin-top">
+    <div class="rulebook rulebook-margin-top rule-section fade-in">
 
-        <!-- Spotlight Moment -->
-        <div class="rule-section">
+
+        <!-- <div class="r'ule-section'">
             <h2><span class="emoji">🌟</span>Spotlight Moment:</h2>
             <p>Once we’re done coding, each team will have 3 minutes to showcase their masterpiece. There's also a
                 2-minute slot for any questions.
@@ -121,39 +128,145 @@
                 impact.</p>
         </div>
 
-        <!-- Respect & Fun -->
+
         <div class="rule-section">
             <h2><span class="emoji">❤️</span>Respect & Fun:</h2>
             <p>At Zysk, we believe in having fun the right way. That means being nice, respecting everyone, & making
                 sure everyone feels included.</p>
         </div>
 
-        <!-- The Reward -->
+
         <div class="rule-section">
             <h2><span class="emoji">🏆</span>The Reward:</h2>
-            <p>Top Spot: The best team walks away with INR 40,000 worth of split among themselves.
-                Second Best: The next team isn't left behind – they get INR 10,000.
+            <p>Top Spot: The best team walks away with INR 40,000 worth of prizes split among themselves.
+                Second Best: The next team isn't left behind – they get Amazon gift cards worth INR 10,000 .
                 And the cherry on top? Winners get a special Zysk certificate and a big shout-out!</p>
         </div>
 
-        <!-- Questions -->
+
         <div class="rule-section">
             <h2><span class="emoji">❓</span>Got Questions?:</h2>
-            <p>No worries! If you're ever in doubt or need some clarity, the Change Agents team is there to help.</p>
+            <p>No worries! If you're ever in doubt or need some clarity, the <a
+                    style="color: red; text-decoration: underline;" href="./techSupport.html">Tech
+                    Support</a> team is there to help. </p>
         </div>
 
-        <!-- Updates -->
+
         <div class="rule-section">
             <h2><span class="emoji">📢</span>Staying Updated:</h2>
             <p>Sometimes, things change. If we tweak these rules, you'll be the first to know.</p>
         </div>
 
-        <!-- Lastly -->
+
         <div class="rule-section">
             <h2><span class="emoji">🎉</span>Lastly:</h2>
             <p>ZyskaThon isn't just about coding. It's about coming together as a family, having fun, and leaving with
                 awesome memories and learnings. Let’s make it a time to remember!</p>
+        </div> -->
+
+
+        <!-- Spotlight Moment -->
+        <div class="rule-section">
+            <h2><span class="emoji">🌟</span> ZyskaThon Rulebook</h2>
+            <p>Hello, Zysk family! Get ready to dive into ZyskaThon – our very own coding fest. This is a time to bond,
+                brainstorm, and build amazing things together.</p>
         </div>
+
+        <!-- Participation -->
+        <div class="rule-section">
+            <h2><span class="emoji">🤝</span> Participation</h2>
+            <p>Who’s In? All Zysk members. Because we believe in the power of unity.</p>
+        </div>
+
+        <!-- Team Formation -->
+        <div class="rule-section">
+            <h2><span class="emoji">👥</span> Team Formation</h2>
+            <p>You're already grouped into teams. Thinking of a switch? Just chat with the event organizers.</p>
+        </div>
+
+        <!-- Mark the Calendar -->
+        <div class="rule-section">
+            <h2><span class="emoji">🗓️</span> Mark the Calendar</h2>
+            <p>It's coding time from 22nd September, 10:00 AM till 23rd September, 2:00 PM. Keep those dates free!</p>
+        </div>
+
+        <!-- The Challenge -->
+        <div class="rule-section">
+            <h2><span class="emoji">💡</span> The Challenge</h2>
+            <p>Excited about what you'll be working on? Find the list of topics here. [hyperlink]<br>Remember, let’s
+                innovate from scratch. So, stuff you've done before isn't part of this.</p>
+        </div>
+
+        <!-- Toolkit -->
+        <div class="rule-section">
+            <h2><span class="emoji">🧰</span> Toolkit</h2>
+            <p>You’re free to pick your favorite tech tools. Unless we specifically ask you to stick to something,
+                you’re in the driver's seat.</p>
+        </div>
+
+        <!-- Code Ownership -->
+        <div class="rule-section">
+            <h2><span class="emoji">🏗️</span> Code Ownership</h2>
+            <p>Whatever cool stuff we create during ZyskaThon stays right here with us at Zysk. And if you use someone
+                else’s work, just mention them – it's the fair thing to do.</p>
+        </div>
+
+        <!-- It’s All About Teamwork -->
+        <div class="rule-section">
+            <h2><span class="emoji">🤝</span> It’s All About Teamwork</h2>
+            <p>Combine your strengths, work together, and create magic.<br>We’re all about keeping it in the family – so
+                no outside help, please.<br>And a small reminder: Let’s be original and avoid copying.</p>
+        </div>
+
+        <!-- Spotlight Moment -->
+        <div class="rule-section">
+            <h2><span class="emoji">🌟</span> Spotlight Moment</h2>
+            <p>Once we’re done coding, each team will have 3 minutes to showcase their masterpiece. There's also a
+                2-minute slot for any questions.<br>We'll be checking out how creative your ideas are, how useful they
+                could be, their design, and their impact.</p>
+        </div>
+
+        <!-- Respect & Fun -->
+        <div class="rule-section">
+            <h2><span class="emoji">❤️</span> Respect & Fun</h2>
+            <p>At Zysk, we believe in having fun the right way. That means being nice, respecting everyone, and making
+                sure everyone feels included.</p>
+        </div>
+
+        <!-- The Reward -->
+        <div class="rule-section">
+            <h2><span class="emoji">🏆</span> The Reward</h2>
+            <p>Top Spot: The best team walks away with INR 40,000 worth of prizes split among themselves.<br>Second
+                Best: The next team isn't left behind – they get Amazon gift vouchers worth INR 10,000.<br>And the
+                cherry on top? Winners get a special Zysk certificate and a big shout-out!</p>
+        </div>
+
+        <!-- Got Questions? -->
+        <div class="rule-section">
+            <h2><span class="emoji">❓</span> Got Questions?</h2>
+            <p>No worries! If you're ever in doubt or need some clarity, the Change Agents team is there to help.</p>
+        </div>
+
+        <!-- Staying Updated -->
+        <div class="rule-section">
+            <h2><span class="emoji">📢</span> Staying Updated</h2>
+            <p>Sometimes, things change. If we tweak these rules, you'll be the first to know.</p>
+        </div>
+
+        <div class="rule-section">
+            <h2><span class="emoji">❓</span>Got Questions?:</h2>
+            <p>No worries! If you're ever in doubt or need some clarity, the <a
+                    style="color: red; text-decoration: underline;" href="./techSupport.html">Tech
+                    Support</a> team is there to help. </p>
+        </div>
+
+        <!-- Lastly -->
+        <div class="rule-section">
+            <h2><span class="emoji">🎉</span> Lastly</h2>
+            <p>ZyskaThon isn't just about coding. It's about coming together as a family, having fun, and leaving with
+                awesome memories and learnings. Let’s make it a time to remember!</p>
+        </div>
+
 
     </div>
 

@@ -8,115 +8,73 @@
     <meta name="title" content="Zyskathon | 2023">
     <title>Zyskathon | 2023</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome for icons -->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-
-    <!-- Custom styles -->
     <link href="css/grayscale.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
-    <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon_io/g40-3.svg">
 
     <style>
-        /* Navigation Styles */
-        .nav-item a {
-            font-size: 1em;
-            /* Adjust this value as needed */
-            padding: 15px 20px;
-            /* Increased padding for spaciousness */
-            transition: all 0.3s;
-            /* Smooth transition for hover effects */
-        }
-
-        /* Hover effect for navbar items */
-        .nav-item a:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-            /* Slight white background on hover */
-            color: #FF5733;
-            /* Change font color on hover. Adjust color as needed */
-            border-radius: 5px;
-            /* Rounded corners */
-        }
-
-        /* Body and Sections Styles */
         body {
-            font-family: 'Open Sans', sans-serif;
             background-color: white !important;
-            margin: 50px;
-            color: #000000;
-        }
-
-        #topics {
-            /* background-color: #17153A; */
-            background-color: white !important;
-            color: #f8f9fa;
-            padding: 60px 0;
         }
 
         .topics-list {
             width: 90%;
             margin: auto;
             font-size: 18px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in 1s ease forwards, move-up 1s ease forwards;
         }
 
-        .topics-list h2 {
-            color: #f8f9fa;
-            text-align: center;
-            margin-bottom: 40px;
-            font-weight: 600;
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
         }
 
-        .topics-list ol {
-            padding-left: 40px;
+        @keyframes move-up {
+            to {
+                transform: translateY(0);
+            }
         }
 
+        /* List Item Animation */
         .topics-list li {
-            margin-bottom: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fade-in-list 1s ease forwards;
         }
 
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            padding: 15px 0;
-            background-color: #17153A;
-            color: #f8f9fa;
+        @keyframes fade-in-list {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        h2 {
-            font-weight: 900;
-            /* font-family: monospace; */
-            color: #000000 !important;
-            font-size: 3rem;
-        }
-
-        h2::first-letter {
-            color: #D40000;
+        ol li p {
+            color: black;
+            margin-bottom: 40px;
+            font-weight: 300;
         }
 
         strong {
             color: #D40000;
-            font-size: larger;
         }
 
-        p {
-            color: black;
-            font-weight: 400;
+        h2 {
+            font-size: 35px;
+            font-weight: 700;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2::first-letter {
+            color: #D40000;
         }
     </style>
 </head>
@@ -133,6 +91,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul id="navbar-buttons" class="navbar-nav ml-auto">
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger nexa" href="introduction.html">Introduction</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger nexa" href="topics.html">Topics</a>
                 </li>
                 <li class="nav-item">
@@ -141,46 +102,21 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger nexa" href="guidence.html">Guides</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" id="team">
                     <a class="nav-link js-scroll-trigger nexa" href="rulebook.html">RuleBook</a>
                 </li>
-                <li class="nav-item" id="team">
+                <!-- <li class="nav-item" id="team">
                     <a class="nav-link js-scroll-trigger nexa" href="techSupport.html">TechSupport</a>
-                </li>
+                </li> -->
             </ul>
         </div>
-        </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="index.html">ZyskaThon</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="topics.html">Topics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="teams.html">Teams</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="guidence.html">Guides</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="rulebook.html">RuleBook</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav> -->
 
     <section id="topics" class="margin-top-topics">
         <div class="container">
             <div class="topics-list">
                 <h2> Topics</h2>
-                <ol style="color: #D40000; font-weight: 900;">
+                <ol style="color: #D40000; font-weight: 900; list-style: decimal inside;">
                     <li>
                         <strong>Resume/Candidate Management System:</strong> <br>
                         <p>
@@ -188,7 +124,6 @@
                             evaluating job applications, enabling HR and team leads to identify and onboard top talent
                             effectively.
                         </p>
-                        <br>
                     </li>
                     <li>
                         <strong>Time-Sheet Management Application:</strong> <br>
@@ -198,7 +133,6 @@
                             can get an accurate understanding of a project's progress and resource allocation at any
                             time.
                         </p>
-                        <br>
                     </li>
                     <li>
                         <strong>Contract Management Application:</strong> <br>
@@ -208,7 +142,6 @@
                             secure storage, easy retrieval, and automated notifications for key contract milestones to
                             enhance efficiency and compliance.
                         </p>
-                        <br>
                     </li>
                     <li>
                         <strong>Self Certification Portal:</strong> <br>
@@ -228,6 +161,19 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+        // Animation on page load
+        window.addEventListener("load", function () {
+            const topicsList = document.querySelector(".topics-list");
+            const listItems = topicsList.querySelectorAll("li");
+            topicsList.style.opacity = 1;
+            topicsList.style.transform = "translateY(0)";
+            listItems.forEach((item, index) => {
+                item.style.animation = `fade-in-list 1s ease forwards ${index * 0.2 + 0.1}s`;
+            });
+        });
+    </script>
 </body>
 
 </html>
