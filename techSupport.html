@@ -48,26 +48,26 @@
 
         h1 {
             font-weight: 900;
-            font-size: 3.5rem;
+            font-size: 3rem;
         }
 
         /* Guide Styles */
         .guide-image {
-            width: 350px;
+            width: 210px;
             /* Increased image size */
-            height: 350px;
+            height: 210px;
             border-radius: 50%;
-            border: 5px solid #D40000;
+            border: 3px solid #D40000;
             object-fit: cover;
             margin-bottom: 30px;
             /* Increase bottom margin */
-            margin-left: 60px;
+            /* margin-left: 60px; */
             /* Increase left margin */
-            margin-right: 60px;
+            /* margin-right: 60px; */
         }
 
         .guide-name {
-            font-size: 26px;
+            font-size: 23px;
             font-weight: 600;
             text-align: center;
             margin-bottom: 15px;
@@ -88,7 +88,6 @@
 
 
         .guide-title {
-
             color: black;
             /* Set color to white */
             margin-top: 50px;
@@ -103,12 +102,49 @@
 
         body {
             background-color: white !important;
-            margin: 50px;
+            /* margin: 50px; */
             color: black !important;
         }
 
         a {
             color: #D40000 !important;
+        }
+
+        .tech-guides {
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 1200px;
+        }
+
+        .scrolling-text {
+            white-space: nowrap;
+            /* Prevent text from wrapping */
+            overflow: hidden;
+            /* Hide the overflowing text */
+            animation: scroll 20s linear infinite;
+            /* Use the scroll animation for continuous scrolling */
+        }
+
+        /* Define the scroll animation */
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+                /* Start off-screen to the right */
+            }
+
+            100% {
+                transform: translateX(-100%);
+                /* Scroll to the left end */
+            }
+        }
+
+        /* Style the individual spans if needed */
+        .scrolling-text span {
+            font-size: 18px;
+            color: #D40000;
+            margin-right: 50px;
+            display: inline-block;
+            /* Display spans in a row */
         }
     </style>
 </head>
@@ -172,31 +208,67 @@
     </nav> -->
 
     <!-- Guides Section -->
-    <div class="container guide-container">
-        <h1 class="text-center guide-title"> <span>Our</span> Guides</h1>
+    <div class="tech-guides guide-container">
+        <h1 class="text-center guide-title"> <span>Tech</span> Guides</h1>
         <div class="d-flex justify-content-between">
-            <!-- Guide: Varun -->
             <div class=" text-center mb-5">
                 <img src="img/varun.png" alt="Varun" class="guide-image">
-                <div class="guide-name">Varun (CEO)</div>
-
-                <a href="https://www.linkedin.com/in/varun-umesh/" target="_blank" class="mx-2 orange-hover">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+                <div class="guide-name">Vikas</div>
             </div>
 
-            <!-- Guide: Shilpa -->
             <div class="text-center mb-5">
                 <img src="https://lovely-bublanina-c45f81.netlify.app/static/media/Ryah.6f561055.jpg" alt="Shilpa"
                     class="guide-image">
-                <div class="guide-name">Shilpa (CTO)</div>
+                <div class="guide-name">Rajkumar</div>
+            </div>
 
-                <a href="https://www.linkedin.com/in/shilpa-v-p-10841992/" target="_blank" class="mx-2 orange-hover">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+            <div class=" text-center mb-5">
+                <img src="img/varun.png" alt="Varun" class="guide-image">
+                <div class="guide-name">Rohan</div>
+            </div>
+
+            <div class=" text-center mb-5">
+                <img src="img/varun.png" alt="Varun" class="guide-image">
+                <div class="guide-name">Basant</div>
+            </div>
+            <div class=" text-center mb-5">
+                <img src="img/richard.jfif" alt="Varun" class="guide-image">
+                <div class="guide-name">Richard</div>
             </div>
         </div>
+
+
     </div>
+    <marquee behavior="scroll" direction="left" scrollamount="15" style="margin-top: 100px;">
+        <span
+            style="font-size: 18px; color: #D40000; margin-right: 50px; font-size: 25px; font-weight: 700; font-family: monospace;">
+            Questions poppin' like popcorn? We're the butter to your curiosity!</span>
+        <span
+            style="font-size: 18px; color: black; margin-right: 50px; font-size: 25px; font-weight: 700; font-family: monospace;">Need
+            some
+            mind-blowing info?
+            We're like the
+            human version of Google!
+        </span>
+        <span
+            style="font-size: 18px; color: #D40000; margin-right: 50px; font-size: 25px; font-weight: 700; font-family: monospace;">
+            Questions piling up like dirty laundry? We're the detergent for your curious stains!
+        </span>
+        <span
+            style="font-size: 18px; color: black; margin-right: 50px; font-size: 25px; font-weight: 700; font-family: monospace;">
+            Questions poppin' like popcorn? We're the butter to your curiosity!</span>
+        <span
+            style="font-size: 18px; color: #D40000; margin-right: 50px; font-size: 25px; font-weight: 700; font-family: monospace;">Need
+            some
+            mind-blowing info?
+            We're like the
+            human version of Google!
+        </span>
+        <span
+            style="font-size: 18px; color: black; margin-right: 50px; font-size: 25px; font-weight: 700; font-family: monospace;">
+            Questions piling up like dirty laundry? We're the detergent for your curious stains!
+        </span>
+    </marquee>
 
     <!-- Scripts -->
     <script src="vendor/jquery/jquery.min.js"></script>
